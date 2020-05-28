@@ -43,12 +43,12 @@ RUN apt-get update \
 ARG DECONZ_VERSION
 RUN if [ "${BUILD_ARCH}" = "armhf" ]; \
         then \
-            curl -q -L -o /deconz.deb http://www54.uptobox.com/dl/H03qRatR6t1rvOY5GFVGBaWRI-F5BbPHDJskn7ToPFwCjkuQbmUtbqLy6BT42tFAV8MCP1Pht8P5YrURUQLbo1L2OhKRyklzhfXV3WSu4T7k1v4HVTeRSKicEu0dtKVfGDF_zxYF1ju9yVHEiZswjQ/deconz_2.05.78-debian-stretch-beta_arm64.deb; \
+            curl -q -L -o /deconz.deb http://www54.uptobox.com/dl/dVA-14u51tCWXnf6lLcwiWj_nQFcidhAKSr3-FKsF5Nk3VpG2xDC4AbJ6tdz5eKFngHs7708DGPhogytBwUk-vvwwpH3NYid6MuqkozAsb9phsy_iGwfXXnfVBeO55Lc_ELW_pbOcxHavAkyWcDIsg/deconz-2.05.78-qt5.deb; \
         elif [ "${BUILD_ARCH}" = "aarch64" ]; \
         then \
-            curl -q -L -o /deconz.deb http://www54.uptobox.com/dl/H03qRatR6t1rvOY5GFVGBaWRI-F5BbPHDJskn7ToPFwCjkuQbmUtbqLy6BT42tFAV8MCP1Pht8P5YrURUQLbo1L2OhKRyklzhfXV3WSu4T7k1v4HVTeRSKicEu0dtKVfGDF_zxYF1ju9yVHEiZswjQ/deconz_2.05.78-debian-stretch-beta_arm64.deb; \
+            curl -q -L -o /deconz.deb http://www54.uptobox.com/dl/dVA-14u51tCWXnf6lLcwiWj_nQFcidhAKSr3-FKsF5Nk3VpG2xDC4AbJ6tdz5eKFngHs7708DGPhogytBwUk-vvwwpH3NYid6MuqkozAsb9phsy_iGwfXXnfVBeO55Lc_ELW_pbOcxHavAkyWcDIsg/deconz-2.05.78-qt5.deb; \
         else \
-            curl -q -L -o /deconz.deb http://www54.uptobox.com/dl/H03qRatR6t1rvOY5GFVGBaWRI-F5BbPHDJskn7ToPFwCjkuQbmUtbqLy6BT42tFAV8MCP1Pht8P5YrURUQLbo1L2OhKRyklzhfXV3WSu4T7k1v4HVTeRSKicEu0dtKVfGDF_zxYF1ju9yVHEiZswjQ/deconz_2.05.78-debian-stretch-beta_arm64.deb; \
+            curl -q -L -o /deconz.deb http://www54.uptobox.com/dl/dVA-14u51tCWXnf6lLcwiWj_nQFcidhAKSr3-FKsF5Nk3VpG2xDC4AbJ6tdz5eKFngHs7708DGPhogytBwUk-vvwwpH3NYid6MuqkozAsb9phsy_iGwfXXnfVBeO55Lc_ELW_pbOcxHavAkyWcDIsg/deconz-2.05.78-qt5.deb; \
         fi \
     && dpkg -i /deconz.deb \
     && rm -f /deconz.deb \
