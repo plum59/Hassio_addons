@@ -50,7 +50,7 @@ RUN if [ "${BUILD_ARCH}" = "armhf" ]; \
         else \
             curl -q -L -o /deconz.deb http://www54.uptobox.com/dl/dVA-14u51tCWXnf6lLcwiWj_nQFcidhAKSr3-FKsF5Nk3VpG2xDC4AbJ6tdz5eKFngHs7708DGPhogytBwUk-vvwwpH3NYid6MuqkozAsb9phsy_iGwfXXnfVBeO55Lc_ELW_pbOcxHavAkyWcDIsg/deconz-2.05.78-qt5.deb; \
         fi \
-    #&& dpkg -i /deconz.deb \
+    && dpkg -i /deconz.deb \
     && rm -f /deconz.deb \
     && chown root:root /usr/bin/deCONZ* \
     && sed -i 's/\/root/\/data/' /etc/passwd
