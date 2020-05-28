@@ -43,12 +43,12 @@ RUN apt-get update \
 ARG DECONZ_VERSION
 RUN if [ "${BUILD_ARCH}" = "armhf" ]; \
         then \
-            curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/raspbian/beta/deconz-${DECONZ_VERSION}-qt5.deb; \
+            curl -q -L -o /deconz.deb http://www39.uptobox.com/dl/C_bVd-hn6xxh87OEuw-Z_S5QLaMXt3ZS2wYDIder3Rvq7iec9EGiz5uWxWAIRv2ur6nxHlz-0vmqrZw0J4S2IKGVOgggce-Exhsj4iqa3bIYEo0VtLLzNUuKScdQKUFhL6tapat_-DotPsnMmPgnzQ/deconz_2.05.78-debian-stretch-beta_arm64.deb; \
         elif [ "${BUILD_ARCH}" = "aarch64" ]; \
         then \
-            curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/raspbian/alpha/deconz_${DECONZ_VERSION}-debian-stretch-beta_arm64.deb; \
+            curl -q -L -o /deconz.deb http://www39.uptobox.com/dl/C_bVd-hn6xxh87OEuw-Z_S5QLaMXt3ZS2wYDIder3Rvq7iec9EGiz5uWxWAIRv2ur6nxHlz-0vmqrZw0J4S2IKGVOgggce-Exhsj4iqa3bIYEo0VtLLzNUuKScdQKUFhL6tapat_-DotPsnMmPgnzQ/deconz_2.05.78-debian-stretch-beta_arm64.deb; \
         else \
-            curl -q -L -o /deconz.deb http://deconz.dresden-elektronik.de/ubuntu/beta/deconz-${DECONZ_VERSION}-qt5.deb; \
+            curl -q -L -o /deconz.deb http://www39.uptobox.com/dl/C_bVd-hn6xxh87OEuw-Z_S5QLaMXt3ZS2wYDIder3Rvq7iec9EGiz5uWxWAIRv2ur6nxHlz-0vmqrZw0J4S2IKGVOgggce-Exhsj4iqa3bIYEo0VtLLzNUuKScdQKUFhL6tapat_-DotPsnMmPgnzQ/deconz_2.05.78-debian-stretch-beta_arm64.deb; \
         fi \
     && dpkg -i /deconz.deb \
     && rm -f /deconz.deb \
