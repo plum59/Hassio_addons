@@ -1,7 +1,7 @@
 {
-  "name": "plmdeCONZ",
+  "name": "deCONZ",
   "version": "0.0.1",
-  "slug": "plmdeconz",
+  "slug": "deconz",
   "description": "Control a Zigbee network with ConBee or RaspBee by Dresden Elektronik",
   "arch": ["amd64", "armhf", "aarch64"],
   "url": "https://github.com/plum59/Hassio_addons/tree/master/deconz",
