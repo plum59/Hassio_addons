@@ -1,6 +1,6 @@
 {
   "name": "deCONZ",
-  "version": "5.3.5",
+  "version": "0.0.1",
   "slug": "deconz",
   "description": "Control a Zigbee network with ConBee or RaspBee by Dresden Elektronik",
   "arch": ["amd64", "armhf", "aarch64"],
@@ -42,5 +42,5 @@
     "dbg_zcl": "int?",
     "dbg_zdp": "int?"
   },
-  "image": "homeassistant/{arch}-addon-deconz"
+  "image": "plum59/{arch}-addon-deconz"
 }
